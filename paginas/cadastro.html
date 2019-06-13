@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='../css/bootstrap.min.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <main>
+        <header >
+            <div class="container-fluid"  style="position: relative">
+                <img src="../imagens/montanhaGelo1.jpg" width="100%" height="80px" >
+                <div>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                        <a class="navbar-brand">Pagina Inicial</a>
+                        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="my-nav" class="collapse navbar-collapse">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Winterfell</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Secretarias</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#">Noticias</a>
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="#">Transparência</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="#">INTRANET</a>
+                                            </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+            
+        </header>
+        <section>
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-8">
+                    <h1 style="padding-left: 350px;padding-top: 40px">Cadastro</h1>
+                    <p>winterfell gostaria de ser a melhor ,,cidade para seus cidadões portanto e fundamental ouvir você. Faça seu cadastro e participe estamos ansiosos para falar com você.</p>
+                    <div>
+                        <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputnome">Nome</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="Nome">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputsobrenome">Sobrenome</label>
+                                <input type="text" class="form-control" id="inputPassword4" placeholder="Sobrenome">
+                              </div>
+                            </div>
+                            <div class="row">
+                            <div class="form-group col-md-4">
+                              <label for="inputnascimento">Dt nascimento</label>
+                              <input type="date" class="form-control" id="inputAddress" placeholder="20/10/2018">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputnascimento">RG</label>
+                                <input type="number" class="form-control" id="inputAddress" placeholder="457845">
+                              </div>
+                              <div class="form-group col-md-4">
+                                <label for="inputnascimento">CPF</label>
+                                <input type="number" class="form-control" id="inputAddress" placeholder="45236624532">
+                              </div>
+                            </div>
+                            <div class="row">
+                            <div class="form-group col-md-8">
+                              <label for="inputAddress2">Endereço</label>
+                              <input type="text" class="form-control" id="inputAddress2" placeholder=" rua, numero.">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputAddress2">Bairro</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Castanehira">
+                              </div>
+                        </div>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputCity">Telefone</label>
+                                <input type="tel" class="form-control" id="inputCity"
+                                placeholder="(91)98457-6523">
+                              </div>
+                              
+                              <div class="form-group col-md-6">
+                                <label for="inputCEP">Email</label>
+                                <input type="email" class="form-control" id="inputCEP"
+                                placeholder="quatalay@email.com">
+                              </div>
+                            </div>
+                           
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >Cadastrar</button>
+                          </form>
+                          <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Obrigado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Cadastro Realizado com sucesso!!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="alerta()">Fechar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
